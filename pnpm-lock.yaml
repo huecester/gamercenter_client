@@ -9,6 +9,7 @@ specifiers:
   cypress: ^10.2.0
   dotenv: ^16.0.1
   eslint: ^8.16.0
+  eslint-plugin-cypress: ^2.12.1
   eslint-plugin-svelte3: ^4.0.0
   nord: ^0.2.1
   normalize.css: ^8.0.1
@@ -32,6 +33,7 @@ devDependencies:
   '@typescript-eslint/parser': 5.29.0_b5e7v2qnwxfo6hmiq56u52mz3e
   cypress: 10.2.0
   eslint: 8.18.0
+  eslint-plugin-cypress: 2.12.1_eslint@8.18.0
   eslint-plugin-svelte3: 4.0.0_wy4erphnvhealet26qderqv6bu
   sass: 1.53.0
   svelte: 3.48.0
@@ -1221,6 +1223,15 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /eslint-plugin-cypress/2.12.1_eslint@8.18.0:
+    resolution: {integrity: sha512-c2W/uPADl5kospNDihgiLc7n87t5XhUbFDoTl6CfVkmG+kDAb5Ux10V9PoLPu9N+r7znpc+iQlcmAqT1A/89HA==}
+    peerDependencies:
+      eslint: '>= 3.2.1'
+    dependencies:
+      eslint: 8.18.0
+      globals: 11.12.0
+    dev: true
+
   /eslint-plugin-svelte3/4.0.0_wy4erphnvhealet26qderqv6bu:
     resolution: {integrity: sha512-OIx9lgaNzD02+MDFNLw0GEUbuovNcglg+wnd/UY0fbZmlQSz7GlQiQ1f+yX0XvC07XPcDOnFcichqI3xCwp71g==}
     peerDependencies:
@@ -1611,6 +1622,11 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       ini: 2.0.0
+    dev: true
+
+  /globals/11.12.0:
+    resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
+    engines: {node: '>=4'}
     dev: true
 
   /globals/13.15.0:
