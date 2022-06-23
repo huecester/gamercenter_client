@@ -3,7 +3,9 @@
 </script>
 
 <header>
-	<img src={logo} alt="Gamercenter logo"/>
+	<a href="/">
+		<img src={logo} alt="Gamercenter logo"/>
+	</a>
 </header>
 
 <style lang="scss">
