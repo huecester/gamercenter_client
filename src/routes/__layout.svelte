@@ -16,8 +16,8 @@
 	export let url: string;
 
 	const TRANSITION_OFFSET = 30;
-	const TRANSITION_DURATION = 450;
-	const TRANSITION_DELAY = 50;
+	const TRANSITION_DURATION = 400;
+	const TRANSITION_DELAY = 55;
 </script>
 
 <svelte:head>
