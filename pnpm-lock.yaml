@@ -10,12 +10,12 @@ specifiers:
   dotenv: ^16.0.1
   eslint: ^8.16.0
   eslint-plugin-cypress: ^2.12.1
-  eslint-plugin-svelte3: ^4.0.0
   nord: ^0.2.1
   normalize.css: ^8.0.1
   sass: ^1.53.0
   svelte: ^3.44.0
   svelte-check: ^2.7.1
+  svelte-eslint-parser: ^0.16.3
   svelte-preprocess: ^4.10.6
   tslib: ^2.3.1
   typescript: ^4.7.2
@@ -34,10 +34,10 @@ devDependencies:
   cypress: 10.2.0
   eslint: 8.18.0
   eslint-plugin-cypress: 2.12.1_eslint@8.18.0
-  eslint-plugin-svelte3: 4.0.0_wy4erphnvhealet26qderqv6bu
   sass: 1.53.0
   svelte: 3.48.0
   svelte-check: 2.7.2_sass@1.53.0+svelte@3.48.0
+  svelte-eslint-parser: 0.16.3_svelte@3.48.0
   svelte-preprocess: 4.10.7_cskk2ketiwcmbharqp7ehzkhki
   tslib: 2.4.0
   typescript: 4.7.4
@@ -1230,16 +1230,6 @@ packages:
     dependencies:
       eslint: 8.18.0
       globals: 11.12.0
-    dev: true
-
-  /eslint-plugin-svelte3/4.0.0_wy4erphnvhealet26qderqv6bu:
-    resolution: {integrity: sha512-OIx9lgaNzD02+MDFNLw0GEUbuovNcglg+wnd/UY0fbZmlQSz7GlQiQ1f+yX0XvC07XPcDOnFcichqI3xCwp71g==}
-    peerDependencies:
-      eslint: '>=8.0.0'
-      svelte: ^3.2.0
-    dependencies:
-      eslint: 8.18.0
-      svelte: 3.48.0
     dev: true
 
   /eslint-scope/5.1.1:
@@ -2776,6 +2766,18 @@ packages:
       - sass
       - stylus
       - sugarss
+    dev: true
+
+  /svelte-eslint-parser/0.16.3_svelte@3.48.0:
+    resolution: {integrity: sha512-IE55ui0WhXm2OqgOqObiqUgLIzWdBfL0fKHHxZCeeK9dERB7xZ8m7hDEgfwb4YS5pzT0VyqdyZ9e8MWw7O5gVQ==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      svelte: ^3.37.0
+    dependencies:
+      eslint-scope: 7.1.1
+      eslint-visitor-keys: 3.3.0
+      espree: 9.3.2
+      svelte: 3.48.0
     dev: true
 
   /svelte-hmr/0.14.12_svelte@3.48.0:

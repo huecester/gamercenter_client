@@ -1,6 +1,6 @@
 <script lang="ts">
-	import routes from '$lib/data/routes.json';
 	import { page } from '$app/stores';
+	import routes from '$lib/data/routes.json';
 </script>
 
 <nav data-cy="navbar">

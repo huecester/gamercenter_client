@@ -11,7 +11,6 @@ parserOptions:
   sourceType: module
 plugins:
   - '@typescript-eslint'
-  - 'svelte3'
   - 'cypress'
 ignorePatterns:
   - '*.cjs'
@@ -57,4 +56,6 @@ overrides:
           - methods
   - files:
       - '*.svelte'
-    processor: 'svelte3/svelte3'
+    parser: 'svelte-eslint-parser'
+    parserOptions:
+      parser: '@typescript-eslint/parser'

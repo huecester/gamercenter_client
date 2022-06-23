@@ -11,7 +11,7 @@ describe('/index', () => {
 		];
 
 		for (const route of ROUTES) {
-			cy.get('@navbar').contains(route.name).as('anchor')
+			cy.get('@navbar').contains(route.name).as('anchor');
 			cy.get('@anchor').click();
 
 			cy.get('@anchor').should('have.class', 'active');
