@@ -1,12 +1,23 @@
+<script lang="ts" context="module">
+	/** @type {import('@sveltejs/kit').load} */
+	export async function load(context: { url: string }) {
+		return {
+			props: { url: context.url },
+		};
+	}
+</script>
+
 <script lang="ts">
 	import '$lib/styles/global.scss';
 	import Header from '$lib/components/Header.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import { fly } from 'svelte/transition';
-	import { page } from '$app/stores';
 
-	const TRANSITION_DURATION = 375;
-	const TRANSITION_OFFSET = 100;
+	export let url: string;
+
+	const TRANSITION_OFFSET = 30;
+	const TRANSITION_DURATION = 450;
+	const TRANSITION_DELAY = 50;
 </script>
 
 <svelte:head>
@@ -18,10 +29,10 @@
 <Header />
 <Navbar />
 
-{#key $page.url.toString()}
+{#key url}
 	<main
-		in:fly={{ delay: TRANSITION_DURATION, duration: TRANSITION_DURATION, x: -TRANSITION_OFFSET, opacity: 0 }}
-		out:fly={{ duration: TRANSITION_DURATION, x: TRANSITION_OFFSET, opacity: 0 }}
+		in:fly={{ delay: TRANSITION_DURATION + TRANSITION_DELAY, duration: TRANSITION_DURATION, y: TRANSITION_OFFSET, opacity: 0 }}
+		out:fly={{ duration: TRANSITION_DURATION, y: TRANSITION_OFFSET, opacity: 0 }}
 	>
 		<slot />
 	</main>
