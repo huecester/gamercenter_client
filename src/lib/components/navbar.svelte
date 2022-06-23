@@ -1,17 +1,11 @@
 <script lang="ts">
+	import routes from '$lib/data/routes.json';
 	import { page } from '$app/stores';
-
-	const ROUTES = [
-		{ name: 'Home', href: '/' },
-		{ name: 'About', href: '/about' },
-		{ name: 'Games', href: '/games' },
-		{ name: 'Bots', href: '/bots' },
-	];
 </script>
 
 <nav data-cy="navbar">
 	<ul>
-		{#each ROUTES as route}
+		{#each routes as route}
 			<li>
 				<a href={route.href} class:active={$page.url.pathname === route.href}>
 					{route.name}
