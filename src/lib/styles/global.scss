@@ -1,0 +1,13 @@
+@use './_variables';
+@use 'normalize.css/normalize.css';
+
+:root {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: variables.$nord0;
+	color: variables.$nord4;
+	font-family: variables.$font-stack;
+}

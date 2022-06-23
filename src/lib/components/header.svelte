@@ -1,7 +1,18 @@
 <script lang="ts">
-	import logo from '$lib/images/logo-black-200x150.png';
+	import logo from '$lib/images/logo-white-200x150.png';
 </script>
 
 <header>
 	<img src={logo} alt="Gamercenter logo"/>
 </header>
+
+<style lang="scss">
+	header {
+		text-align: center;
+	}
+
+	img {
+		width: 100px;
+		height: 75px;
+	}
+</style>

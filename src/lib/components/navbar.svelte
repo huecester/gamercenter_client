@@ -1,10 +1,7 @@
 <script lang="ts">
-	type Link = {
-		name: string,
-		href: string,
-	}
+	import { page } from '$app/stores';
 
-	const LINKS: Link[] = [ 
+	const ROUTES = [
 		{ name: 'Home', href: '/' },
 		{ name: 'About', href: '/about' },
 		{ name: 'Games', href: '/games' },
@@ -14,12 +11,46 @@
 
 <nav data-cy="navbar">
 	<ul>
-		{#each LINKS as link}
+		{#each ROUTES as route}
 			<li>
-				<a href={link.href.toString()}>
-					{link.name}
+				<a href={route.href} class:active={$page.url.pathname === route.href}>
+					{route.name}
 				</a>
 			</li>
 		{/each}
 	</ul>
 </nav>
+
+<style lang="scss">
+	nav {
+		margin: 1rem;
+
+		& > ul {
+			display: flex;
+			flex-direction: row;
+
+			background-color: variables.$nord1;
+			padding: 0;
+			
+			& > li {
+				list-style-type: none;
+
+				& > a {
+					color: inherit;
+					text-decoration: inherit;
+
+					display: block;
+					padding: .75rem 1rem;
+
+					transition: .1s background-color;
+					&.active {
+						background-color: variables.$nord10;
+					}
+					&:hover {
+						background-color: variables.$nord9;
+					}
+				}
+			}
+		}
+	}
+</style>
