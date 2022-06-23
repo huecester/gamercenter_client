@@ -1,3 +1,7 @@
+<script lang="ts">
+	import logo from '$lib/images/logo-black-200x150.png';
+</script>
+
 <header>
-	<h1>Header</h1>
+	<img src={logo} alt="Gamercenter logo"/>
 </header>

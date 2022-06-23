@@ -9,7 +9,11 @@ const config = {
 
 	kit: {
 		adapter: adapter()
-	}
+	},
+
+	paths: {
+		assets: '/static',
+	},
 };
 
 export default config;
