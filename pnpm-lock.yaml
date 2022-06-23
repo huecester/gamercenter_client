@@ -3,9 +3,11 @@ lockfileVersion: 5.4
 specifiers:
   '@sveltejs/adapter-auto': next
   '@sveltejs/kit': next
+  '@types/node': ^18.0.0
   '@typescript-eslint/eslint-plugin': ^5.27.0
   '@typescript-eslint/parser': ^5.27.0
   cypress: ^10.2.0
+  dotenv: ^16.0.1
   eslint: ^8.16.0
   eslint-plugin-svelte3: ^4.0.0
   svelte: ^3.44.0
@@ -14,9 +16,13 @@ specifiers:
   tslib: ^2.3.1
   typescript: ^4.7.2
 
+dependencies:
+  dotenv: 16.0.1
+
 devDependencies:
   '@sveltejs/adapter-auto': 1.0.0-next.51
   '@sveltejs/kit': 1.0.0-next.352_svelte@3.48.0
+  '@types/node': 18.0.0
   '@typescript-eslint/eslint-plugin': 5.29.0_qqmbkyiaixvppdwswpytuf2hgm
   '@typescript-eslint/parser': 5.29.0_b5e7v2qnwxfo6hmiq56u52mz3e
   cypress: 10.2.0
@@ -957,6 +963,11 @@ packages:
     dependencies:
       esutils: 2.0.3
     dev: true
+
+  /dotenv/16.0.1:
+    resolution: {integrity: sha512-1K6hR6wtk2FviQ4kEiSjFiH5rpzEVi8WW0x96aztHVMhEspNpc4DVOUTEHtEva5VThQ8IaBX1Pe4gSzpVVUsKQ==}
+    engines: {node: '>=12'}
+    dev: false
 
   /ecc-jsbn/0.1.2:
     resolution: {integrity: sha512-eh9O+hwRHNbG4BLTjEl3nw044CkGm5X6LoaCf7LPp7UU8Qrt47JYNi6nPX8xjW97TKGKm1ouctg0QSpZe9qrnw==}
