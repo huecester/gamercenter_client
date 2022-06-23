@@ -2,6 +2,11 @@
 	import '$lib/styles/global.scss';
 	import Header from '$lib/components/Header.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
+	import { fly } from 'svelte/transition';
+	import { page } from '$app/stores';
+
+	const TRANSITION_DURATION = 375;
+	const TRANSITION_OFFSET = 100;
 </script>
 
 <svelte:head>
@@ -13,9 +18,14 @@
 <Header />
 <Navbar />
 
-<main>
-	<slot />
-</main>
+{#key $page.url.toString()}
+	<main
+		in:fly={{ delay: TRANSITION_DURATION, duration: TRANSITION_DURATION, x: -TRANSITION_OFFSET, opacity: 0 }}
+		out:fly={{ duration: TRANSITION_DURATION, x: TRANSITION_OFFSET, opacity: 0 }}
+	>
+		<slot />
+	</main>
+{/key}
 
 <style lang="scss">
 	main {
