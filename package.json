@@ -10,6 +10,7 @@
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
 		"cypress:open": "cypress open",
 		"cypress:run": "cypress run"
 	},
