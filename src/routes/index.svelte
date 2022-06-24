@@ -1,2 +1,2 @@
-<h2>Hello, world!</h2>
+<h1>Hello, world!</h1>
 <p>This is a paragraph.</p>

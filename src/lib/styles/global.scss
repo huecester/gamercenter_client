@@ -11,3 +11,10 @@ body {
 	color: variables.$nord4;
 	font-family: variables.$font-stack;
 }
+
+a {
+	color: variables.$nord8;
+	&:visited {
+		color: variables.$nord9;
+	}
+}

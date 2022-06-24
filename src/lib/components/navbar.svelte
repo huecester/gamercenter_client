@@ -24,6 +24,7 @@
 			flex-direction: row;
 
 			background-color: variables.$nord1;
+			border: 2px solid variables.$nord2;
 			padding: 0;
 			
 			& > li {

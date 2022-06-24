@@ -1,5 +1,5 @@
 <script lang="ts" context="module">
-	/** @type {import('@sveltejs/kit').load} */
+	/** @type {import('./__types/__layout').Load} */
 	export async function load(context: { url: string }) {
 		return {
 			props: { url: context.url },
@@ -24,6 +24,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true">
 	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet"> 
+	<script src="https://kit.fontawesome.com/c401fc9ffa.js" crossorigin="anonymous"></script>
 </svelte:head>
 
 <Header />
