@@ -19,10 +19,6 @@ const config = {
 		},
 		adapter: adapter(),
 	},
-
-	paths: {
-		assets: '/static',
-	},
 };
 
 export default config;
