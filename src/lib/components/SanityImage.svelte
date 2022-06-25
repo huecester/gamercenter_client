@@ -11,7 +11,11 @@
 {#await img}
 	<IconLoading center={false} />
 {:then img}
-	<img src={img?.url} />
+	{@debug img}
+	<img
+		src={img?.url}
+		alt={portableText.value.alt}
+	/>
 {:catch}
 	<IconError center={false} />
 {/await}
