@@ -5,4 +5,5 @@ Client app for gamercenter
 - [ ] Bot icons
 - [x] Images in descriptions
 - [ ] CI
-- [ ] Vercel
+- [x] Vercel
+- [ ] Date in posts
