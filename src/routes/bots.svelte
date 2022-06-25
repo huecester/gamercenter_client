@@ -19,11 +19,11 @@
 				<PortableText
 					value={bot.description}
 				/>
-				<a href={bot.invite_link}>Invite {bot.name}</a>
+				<a href={bot.inviteLink}>Invite {bot.name}</a>
 			</article>
 		{/each}
 	{:else}
-		<p>No bots found.</p>
+		<IconError />
 	{/if}
 {:else}
 	<IconLoading />
