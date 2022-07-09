@@ -1,8 +1,8 @@
 <script lang="ts">
+	import BasePortableText from '$lib/components/BasePortableText.svelte';
 	import IconError from '$lib/components/IconError.svelte';
 	import IconLoading from '$lib/components/IconLoading.svelte';
 	import type { Bot } from '$lib/sanity/schema';
-	import { PortableText } from '@portabletext/svelte';
 	
 	export let bots: Bot[];
 	export let error: Error;
@@ -19,9 +19,7 @@
 					<h2>{bot.name}</h2>
 					<img src={bot.icon?.url} alt={bot.icon?.alt} />
 				</header>
-				<PortableText
-					value={bot.description}
-				/>
+				<BasePortableText value={bot.description} />
 				<a href={bot.inviteLink}>Invite {bot.name}</a>
 			</article>
 		{/each}

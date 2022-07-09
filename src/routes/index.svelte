@@ -1,18 +1,11 @@
 <script lang="ts">
+	import BasePortableText from '$lib/components/BasePortableText.svelte';
 	import IconError from '$lib/components/IconError.svelte';
 	import IconLoading from '$lib/components/IconLoading.svelte';
-	import PortableTextImage from '$lib/components/PortableTextImage.svelte';
 	import type { Post } from '$lib/sanity/schema';
-	import { PortableText } from '@portabletext/svelte';
 
 	export let posts: Post[];
 	export let error: Error;
-
-	const components = {
-		types: {
-			image: PortableTextImage,
-		},
-	};
 
 	function formatDate(date: Date) {
 		const [_, month, day, year] = date.toDateString().split(' ');
@@ -30,10 +23,7 @@
 					<h2>{post.title}</h2>
 					<time datetime={post._createdAt}>{formatDate(new Date(post._createdAt))}</time>
 				</header>
-				<PortableText 
-					value={post.body}
-					{components}
-				/>
+				<BasePortableText value={post.body} />
 			</article>
 		{/each}
 	{:else}
