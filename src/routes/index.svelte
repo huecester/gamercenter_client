@@ -1,7 +1,7 @@
 <script lang="ts">
 	import IconError from '$lib/components/IconError.svelte';
 	import IconLoading from '$lib/components/IconLoading.svelte';
-	import SanityImage from '$lib/components/SanityImage.svelte';
+	import PortableTextImage from '$lib/components/PortableTextImage.svelte';
 	import type { Post } from '$lib/sanity/schema';
 	import { PortableText } from '@portabletext/svelte';
 
@@ -10,7 +10,7 @@
 
 	const components = {
 		types: {
-			image: SanityImage,
+			image: PortableTextImage,
 		},
 	};
 
