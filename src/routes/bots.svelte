@@ -14,7 +14,7 @@
 {:else if bots}
 	{#if bots.length}
 		{#each bots as bot}
-			<article>
+			<article data-cy="bot">
 				<header>
 					<img src={bot.icon?.url} alt={bot.icon?.alt} />
 					<h2>{bot.name}</h2>

@@ -18,7 +18,7 @@
 {:else if posts}
 	{#if posts.length}
 		{#each posts as post}	
-			<article>
+			<article data-cy="post">
 				<header>
 					<h2>{post.title}</h2>
 					<time datetime={post._createdAt}>{formatDate(new Date(post._createdAt))}</time>

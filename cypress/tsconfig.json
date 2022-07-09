@@ -4,6 +4,7 @@
 		"baseUrl": "../node_modules",
 		"types": [
 			"cypress",
+			"@percy/cypress",
 			"./support/commands"
 		]
 	},
