@@ -1,10 +1,10 @@
 <script lang="ts">
 	import IconError from '$lib/components/IconError.svelte';
 	import IconLoading from '$lib/components/IconLoading.svelte';
-	import type * as Schema from '$lib/sanity/schema';
+	import type { Bot } from '$lib/sanity/schema';
 	import { PortableText } from '@portabletext/svelte';
 	
-	export let bots: Schema.Bot[];
+	export let bots: Bot[];
 	export let error: Error;
 </script>
 
