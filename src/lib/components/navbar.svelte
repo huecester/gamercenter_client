@@ -7,9 +7,15 @@
 	<ul>
 		{#each routes as route}
 			<li>
-				<a href={route.href} class:active={$page.url.pathname === route.href}>
-					{route.name}
-				</a>
+				{#if $page.url.pathname === route.href}
+					<div class="active">
+						{route.name}
+					</div>
+				{:else}
+					<a href={route.href}>
+						{route.name}
+					</a>
+				{/if}
 			</li>
 		{/each}
 	</ul>
@@ -18,34 +24,36 @@
 <style lang="scss">
 	nav {
 		margin: 1rem;
+	}
 
-		& > ul {
-			display: flex;
-			flex-direction: row;
+	ul {
+		display: flex;
+		flex-direction: row;
 
-			background-color: variables.$nord1;
-			border: 2px solid variables.$nord2;
-			padding: 0;
-			
-			& > li {
-				list-style-type: none;
+		background-color: variables.$nord1;
+		border: 2px solid variables.$nord2;
+		padding: 0;
+	}
 
-				& > a {
-					color: inherit;
-					text-decoration: inherit;
+	li {
+		list-style-type: none;
 
-					display: block;
-					padding: .75rem 1rem;
+		& > a, & > div {
+			color: inherit;
+			text-decoration: inherit;
+			cursor: pointer;
 
-					transition: .1s background-color;
-					&.active {
-						background-color: variables.$nord10;
-					}
-					&:hover {
-						background-color: variables.$nord9;
-					}
-				}
+			display: block;
+			padding: .75rem 1rem;
+
+			transition: .1s background-color;
+			&:hover {
+				background-color: variables.$nord9;
 			}
 		}
+	}
+
+	.active {
+		background-color: variables.$nord10;
 	}
 </style>
