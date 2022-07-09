@@ -14,7 +14,6 @@
 {:else if bots}
 	{#if bots.length}
 		{#each bots as bot}
-			{@debug bot}
 			<article>
 				<header>
 					<h2>{bot.name}</h2>
