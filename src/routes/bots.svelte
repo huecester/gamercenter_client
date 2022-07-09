@@ -16,8 +16,8 @@
 		{#each bots as bot}
 			<article>
 				<header>
-					<h2>{bot.name}</h2>
 					<img src={bot.icon?.url} alt={bot.icon?.alt} />
+					<h2>{bot.name}</h2>
 				</header>
 				<BasePortableText value={bot.description} />
 				<a href={bot.inviteLink}>Invite {bot.name}</a>
@@ -32,11 +32,10 @@
 
 <style lang="scss">
 	header {
-		& > h2 {
-			display: flex;
-			align-items: center;
-			gap: 0.5rem;
-		}
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 0.5rem;
 	
 		& > img {
 			width: 32px;
