@@ -12,3 +12,4 @@ node_modules
 /cypress/screenshots
 /cypress/videos
 /.vercel
+/.vercel_build_output

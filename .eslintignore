@@ -12,6 +12,7 @@ node_modules
 /cypress/screenshots
 /cypress/videos
 /.vercel
+/.vercel_build_output
 
 # Ignore files for PNPM, NPM and YARN
 pnpm-lock.yaml
