@@ -22,6 +22,7 @@
 		{#each posts as post}	
 			<article>
 				<h2>{post.title}</h2>
+				<!-- TODO add date -->
 				<PortableText 
 					value={post.body}
 					{components}
