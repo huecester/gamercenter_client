@@ -61,6 +61,7 @@ export interface Bot extends SanityDocument {
     asset: SanityReference<SanityImageAsset>;
     crop?: SanityImageCrop;
     hotspot?: SanityImageHotspot;
+    url?: string;
 
     /**
      * Alt Text — `string`

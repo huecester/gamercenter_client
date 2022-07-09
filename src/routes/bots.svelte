@@ -14,8 +14,12 @@
 {:else if bots}
 	{#if bots.length}
 		{#each bots as bot}
+			{@debug bot}
 			<article>
-				<h2>{bot.name}</h2>
+				<h2>
+					<img src={bot.icon?.url} alt={bot.icon?.alt} />
+					{bot.name}
+				</h2>
 				<PortableText
 					value={bot.description}
 				/>
@@ -28,3 +32,15 @@
 {:else}
 	<IconLoading />
 {/if}
+
+<style lang="scss">
+	h2 {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	
+		& > img {
+			width: 32px;
+		}
+	}
+</style>

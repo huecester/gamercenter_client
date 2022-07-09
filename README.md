@@ -2,7 +2,7 @@
 Client app for gamercenter
 
 ## TODO
-- [ ] Bot icons
+- [x] Bot icons
 - [x] Images in descriptions
 - [ ] CI
 - [x] Vercel
