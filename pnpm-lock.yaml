@@ -22,6 +22,7 @@ specifiers:
   svelte-preprocess: ^4.10.7
   tslib: ^2.4.0
   typescript: ^4.7.4
+  vite: ^2.9.14
 
 dependencies:
   '@sanity/client': 3.3.2
@@ -47,6 +48,7 @@ devDependencies:
   svelte-preprocess: 4.10.7_nwwz52pi43b77jli7kkztp4wsy
   tslib: 2.4.0
   typescript: 4.7.4
+  vite: 2.9.14_sass@1.53.0
 
 packages:
 
