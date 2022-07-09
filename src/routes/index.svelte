@@ -13,6 +13,11 @@
 			image: SanityImage,
 		},
 	};
+
+	function formatDate(date: Date) {
+		const [_, month, day, year] = date.toDateString().split(' ');
+		return `${month} ${day}, ${year}`;
+	};
 </script>
 
 {#if error}
@@ -21,8 +26,10 @@
 	{#if posts.length}
 		{#each posts as post}	
 			<article>
-				<h2>{post.title}</h2>
-				<!-- TODO add date -->
+				<header>
+					<h2>{post.title}</h2>
+					<time datetime={post._createdAt}>{formatDate(new Date(post._createdAt))}</time>
+				</header>
 				<PortableText 
 					value={post.body}
 					{components}
@@ -35,3 +42,16 @@
 {:else}
 	<IconLoading />
 {/if}
+
+<style lang="scss">
+	header {
+		display: flex;
+		align-items: baseline;
+		gap: 0.5rem;
+
+		& > time {
+			font-size: 0.75rem;
+			color: variables.$nord4;
+		}
+	}
+</style>
