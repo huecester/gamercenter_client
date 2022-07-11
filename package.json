@@ -14,8 +14,8 @@
 		"lint": "eslint .",
 		"lint:fix": "eslint . --fix",
 		"cypress:open": "cypress open",
-		"cypress:run": "cypress run",
-		"percy:run": "percy exec -- cypress run"
+		"cypress:run": "cypress run --record",
+		"percy:run": "percy exec -- pnpm cypress:run"
 	},
 	"dependencies": {
 		"@sanity/client": "^3.3.2",
