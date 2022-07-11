@@ -5,6 +5,7 @@
 		"dev": "vite dev",
 		"dev:vercel": "vc dev",
 		"build": "vite build",
+		"build:vercel": "vc build",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync",
