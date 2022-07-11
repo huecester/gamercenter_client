@@ -10,7 +10,7 @@
 	function formatDate(date: Date) {
 		const [_, month, day, year] = date.toDateString().split(' ');
 		return `${month} ${day}, ${year}`;
-	};
+	}
 </script>
 
 {#if error}

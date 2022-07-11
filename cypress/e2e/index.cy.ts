@@ -5,8 +5,6 @@ describe('/index', () => {
 		cy.get('@navbar').contains(name).as('anchor');
 		cy.get('@anchor').click();
 
-		cy.wait(750);
-
 		cy.get('@anchor').should('have.class', 'active');
 		cy.get('@navbar')
 			.get('ul')

@@ -1,8 +1,8 @@
 <script lang="ts">
 	import BasePortableText from '$lib/components/BasePortableText.svelte';
+	import type { Bot } from '$lib/sanity/schema';
 	import IconError from '$lib/components/IconError.svelte';
 	import IconLoading from '$lib/components/IconLoading.svelte';
-	import type { Bot } from '$lib/sanity/schema';
 	
 	export let bots: Bot[];
 	export let error: Error;

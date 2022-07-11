@@ -1,7 +1,7 @@
 <script lang="ts">
-	import PortableTextImage from './PortableTextImage.svelte';
 	import type { InputValue } from '@portabletext/svelte/ptTypes';
 	import { PortableText } from '@portabletext/svelte';
+	import PortableTextImage from './PortableTextImage.svelte';
 
 	export let value: InputValue | undefined;
 </script>
