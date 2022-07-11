@@ -34,7 +34,7 @@
 		"cypress": "^10.3.0",
 		"eslint": "^8.19.0",
 		"eslint-plugin-cypress": "^2.12.1",
-		"postcss": "^8",
+		"postcss": "^8.4.14",
 		"sanity-codegen": "^0.9.8",
 		"sass": "^1.53.0",
 		"svelte": "^3.49.0",
