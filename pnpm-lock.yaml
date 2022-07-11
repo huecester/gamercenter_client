@@ -6,7 +6,7 @@ specifiers:
   '@portabletext/svelte': ^1.0.1
   '@sanity/client': ^3.3.2
   '@sveltejs/adapter-auto': 1.0.0-next.55
-  '@sveltejs/kit': 1.0.0-next.368
+  '@sveltejs/kit': 1.0.0-next.369
   '@types/node': ^18.0.3
   '@typescript-eslint/eslint-plugin': ^5.30.6
   '@typescript-eslint/parser': ^5.30.6
@@ -36,7 +36,7 @@ devDependencies:
   '@percy/cypress': 3.1.2_cypress@10.3.0
   '@portabletext/svelte': 1.0.1_svelte@3.49.0
   '@sveltejs/adapter-auto': 1.0.0-next.55
-  '@sveltejs/kit': 1.0.0-next.368_svelte@3.49.0+vite@2.9.14
+  '@sveltejs/kit': 1.0.0-next.369_svelte@3.49.0+vite@2.9.14
   '@types/node': 18.0.3
   '@typescript-eslint/eslint-plugin': 5.30.6_2vt5mtrqleafs33qg2bhpmbaqm
   '@typescript-eslint/parser': 5.30.6_4x5o4skxv6sl53vpwefgt23khm
@@ -1814,8 +1814,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.368_svelte@3.49.0+vite@2.9.14:
-    resolution: {integrity: sha512-0+JrQebSLbDrc7qPa4HsdG1v1+95ftHJhZtJD/VRifVoyUjURnWL4TrNcfnqNsgtacFWw+rO6obBr1PWc6Mlig==}
+  /@sveltejs/kit/1.0.0-next.369_svelte@3.49.0+vite@2.9.14:
+    resolution: {integrity: sha512-7kSOz6RIehSgV+HgrkV7m9tFkA5Dey/j0sw7vXtSdgcKUCbEwG84Mbk0vH9C2FTLL/9mlEGvxS5AqQ6m/VSv8Q==}
     engines: {node: '>=16.9'}
     hasBin: true
     peerDependencies:
