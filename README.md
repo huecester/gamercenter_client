@@ -6,4 +6,4 @@ Client app for gamercenter
 - [x] Images in descriptions
 - [ ] CI
 - [x] Vercel
-- [ ] Date in posts
+- [x] Date in posts
