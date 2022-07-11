@@ -1,6 +1,6 @@
 import sanityClient from '$lib/sanity/client';
 
-/** @type {import('./__types/bots').RequestHandler} */
+/** @type {import('@sveltejs/kit').RequestHandler} */
 export async function get() {
 	const data = await sanityClient.fetch(`
 		*[_type == 'bot'] {
