@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto';
+import vercel from '@sveltejs/adapter-vercel';
 import preprocess from 'svelte-preprocess';
 import sass from 'sass';
 
@@ -17,7 +17,10 @@ const config = {
 		alias: {
 			$lib: 'src/lib',
 		},
-		adapter: adapter(),
+		adapter: vercel({
+			edge: true,
+			split: false,
+		}),
 	},
 };
 
