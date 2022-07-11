@@ -1,6 +1,6 @@
 import sanityClient from '$lib/sanity/client';
 
-/** @type {import('@sveltejs/kit').RequestHandler} */
+/** @type {import('./__types/index').RequestHandler} */
 export async function get() {
 	const data = await sanityClient.fetch(`
 		*[_type == 'post'] | order(_createdAt desc) {
