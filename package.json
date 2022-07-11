@@ -16,6 +16,11 @@
 		"cypress:run": "cypress run",
 		"percy:run": "percy exec -- cypress run"
 	},
+	"dependencies": {
+		"@sanity/client": "^3.3.2",
+		"nord": "^0.2.1",
+		"normalize.css": "^8.0.1"
+	},
 	"devDependencies": {
 		"@percy/cli": "^1.6.0",
 		"@percy/cypress": "^3.1.2",
@@ -38,11 +43,5 @@
 		"typescript": "^4.7.4",
 		"vite": "^2.9.14"
 	},
-	"type": "module",
-	"dependencies": {
-		"@sanity/client": "^3.3.2",
-		"dotenv": "^16.0.1",
-		"nord": "^0.2.1",
-		"normalize.css": "^8.0.1"
-	}
+	"type": "module"
 }
