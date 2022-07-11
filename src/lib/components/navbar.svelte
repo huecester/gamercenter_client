@@ -1,13 +1,14 @@
 <script lang="ts">
-	import { page } from '$app/stores';
 	import routes from '$lib/data/routes.json';
+
+	export let url: URL;
 </script>
 
 <nav data-cy="navbar">
 	<ul>
 		{#each routes as route}
 			<li>
-				{#if $page.url.pathname === route.href}
+				{#if url.pathname === route.href}
 					<div class="active">
 						{route.name}
 					</div>

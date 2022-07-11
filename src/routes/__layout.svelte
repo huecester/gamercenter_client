@@ -1,8 +1,8 @@
 <script lang="ts" context="module">
 	/** @type {import('./__types/__layout').Load} */
-	export async function load(context: { url: string }) {
+	export async function load({ url }: { url: URL }) {
 		return {
-			props: { url: context.url },
+			props: { url },
 		};
 	}
 </script>
@@ -13,7 +13,7 @@
 	import Navbar from '$lib/components/Navbar.svelte';
 	import { fly } from 'svelte/transition';
 
-	export let url: string;
+	export let url: URL;
 
 	const TRANSITION_OFFSET = 30;
 	const TRANSITION_DURATION = 400;
@@ -28,7 +28,7 @@
 </svelte:head>
 
 <Header />
-<Navbar />
+<Navbar {url} />
 
 {#key url}
 	<main
