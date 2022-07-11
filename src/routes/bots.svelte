@@ -20,7 +20,7 @@
 					<h2>{bot.name}</h2>
 				</header>
 				<BasePortableText value={bot.description} />
-				<a href={bot.inviteLink}>Invite {bot.name}</a>
+				<a target="_blank" href={bot.inviteLink}>Invite {bot.name}</a>
 			</article>
 		{/each}
 	{:else}
