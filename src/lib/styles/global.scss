@@ -33,5 +33,9 @@ article {
 		display: inline-block;
 		background-color: variables.$nord10;
 		padding: .75rem;
+
+		&:visited {
+			color: inherit;
+		}
 	}
 }
